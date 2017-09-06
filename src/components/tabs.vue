@@ -11,7 +11,7 @@
     }
   }
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
   .mm-tabs {
     ul {
       display: flex;

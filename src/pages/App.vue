@@ -1,13 +1,13 @@
 <template>
-  <div class="title">
-    <tabs>
-      <ul slot="list">
-        <li @click="active='ITEM1'" :class="{active: active=='ITEM1'}">项目一</li>
-        <li @click="active='ITEM2'" :class="{active: active=='ITEM2'}">项目二</li>
-      </ul>
-    </tabs>
-
-    <tab-bar></tab-bar>
+  <div class="app">
+    <article>
+      <transition name="component-fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </article>
+    <footer>
+      <tab-bar></tab-bar>
+    </footer>
   </div>
 </template>
 <script>
@@ -19,14 +19,26 @@
     }
   }
 </script>
-<style lang="less">
-  html, body {
-    margin: 0;
-    padding: 0;
-    clear: both;
+<style lang="scss" scoped>
+.app {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  &>header, &>footer {
+    flex-grow: 0;
+    flex-shrink: 1;
   }
-  ul {
-    margin: 0;
-    padding-left: 0;
+  &>article {
+    flex-grow: 1;
+    flex-shrink: 0;
   }
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+/* .component-fade-leave-active for below version 2.1.8 */ 
+.component-fade-enter, .component-fade-leave-to {
+  opacity: 0;
+}
 </style>

@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+  &.column {
+    flex-direction: column;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.space-around {
+    justify-content: space-around;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.flex-end {
+    justify-content: flex-end;
+  }
+  .grow-item {
+    flex-grow: 1;
+  }
+}

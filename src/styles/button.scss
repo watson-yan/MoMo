@@ -1,0 +1,70 @@
+@import './variable.scss';
+
+@mixin button-theme($color) {
+  color: #fff;
+  background: $color;
+  border: 1px solid $color;
+  &:active {
+    background: $color + #101010;
+  }
+}
+
+@mixin button-theme-o($color) {
+  color: $color;
+  background: #fff;
+  border: 1px solid $color;
+  &:active {
+    color: $color + #101010;
+    border-color: $color + #101010;
+  }
+}
+
+.button {
+  padding: .5rem 1.5rem;
+  background: #fff;
+  border: $border;
+  border-radius: .2rem;
+  font-size: 1rem;
+  &.primary {
+    @include button-theme($primary)
+  }
+  &.success {
+    @include button-theme($success)
+  }
+  &.info {
+    @include button-theme($info)
+  }
+  &.warning {
+    @include button-theme($warning)
+  }
+  &.danger {
+    @include button-theme($danger)
+  }
+
+  &.primary-o {
+    @include button-theme-o($primary)
+  }
+  &.success-o {
+    @include button-theme-o($success)
+  }
+  &.info-o {
+    @include button-theme-o($info)
+  }
+  &.warning-o {
+    @include button-theme-o($warning)
+  }
+  &.danger-o {
+    @include button-theme-o($danger)
+  }
+  &.block {
+    display: block;
+    width: 100%;
+  }
+  &:disabled {
+    background: #ddd;
+    border: 1px solid transparent;
+  }
+  &:focus {
+    outline: none;
+  }
+}

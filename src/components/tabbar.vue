@@ -1,19 +1,19 @@
 <template>
   <div class="tabbar" :style="{background: bg, color: color}">
     <ul>
-      <li>
+      <li class="active">
         <p>
-          <i class="iconfont icon-listview"></i>
+          <i class="iconfont icon-listview"></i> 样式
         </p>
       </li>
       <li>
         <p>
-          <i class="iconfont icon-star-o"></i>
+          <i class="iconfont icon-star-o"></i> 组件
         </p>
       </li>
       <li>
         <p>
-          <i class="iconfont icon-personal"></i>
+          <i class="iconfont icon-personal"></i> 关于
         </p>
       </li>
     </ul>
@@ -24,11 +24,11 @@ export default {
   props: {
     bg: {
       type: String,
-      default: '#e6e6e6'
+      default: '#f1f1f1'
     },
     color: {
       type: String,
-      default: '#888'
+      default: '#666'
     }
   },
   data() {
@@ -36,7 +36,7 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
   ul {
     display: flex;
     padding: 0 10px;
@@ -52,7 +52,11 @@ export default {
         margin: 0;
         i {
           font-size: 24px;
+          vertical-align: sub;
         }
+      }
+      &.active {
+        color: #38adff;
       }
     }
   }
