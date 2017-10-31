@@ -5,12 +5,8 @@ import sass from 'rollup-plugin-sass'
 import uglify from 'rollup-plugin-uglify'
 import replace from 'rollup-plugin-replace'
 import alias from 'rollup-plugin-alias'
-// const resolve = require('rollup-plugin-node-resolve')
-// const babel = require('rollup-plugin-babel')
-// const vue = require('rollup-plugin-vue')
-// const sass = require('rollup-plugin-sass')
-// const uglify = require('rollup-plugin-uglify')
-// const replace = require('rollup-plugin-replace')
+import autoprefixer from 'autoprefixer'
+import postcss from 'postcss'
 
 export default {
   entry: 'src/index.js',
@@ -21,17 +17,23 @@ export default {
     alias({
       'vue': 'vue/dist/vue.esm.js'
     }),
-    vue({css: true}),
+    vue({
+      postcss: [autoprefixer()], // 配置vue文件中的 postcss/autoprefixer
+      css: true
+    }),
     replace({
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.VUE_ENV': JSON.stringify('browser')
     }),
     sass({
-      output: './dist/bundle.css'
+      output: './dist/bundle.css',
+      processor: css => postcss([autoprefixer])
+        .process(css)
+        .then(result => result.css)
     }),
     babel({
       exclude: 'node_modules/**' // only transpile our source code
     }),
-    uglify()
+    process.env.NODE === 'production' && uglify()
   ]
 }

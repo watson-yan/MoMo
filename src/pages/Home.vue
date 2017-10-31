@@ -11,7 +11,7 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .home {
   .list-item {
     padding: 0.75rem 0 0.75rem 1rem;
