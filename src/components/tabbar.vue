@@ -1,19 +1,12 @@
 <template>
   <div class="tabbar" :style="{background: bg, color: color}">
     <ul>
-      <li class="active">
+      <li v-for="(item, index) of menus"
+          @click="callback(item, index)"
+          :class="{active: activeIndex === index}"
+          :key="index">
         <p>
-          <i class="iconfont icon-listview"></i> 样式
-        </p>
-      </li>
-      <li>
-        <p>
-          <i class="iconfont icon-star-o"></i> 组件
-        </p>
-      </li>
-      <li>
-        <p>
-          <i class="iconfont icon-personal"></i> 关于
+          <i :class="item.icon"></i> {{item.title}}
         </p>
       </li>
     </ul>
@@ -22,27 +15,48 @@
 <script>
 export default {
   props: {
+    menus: {
+      type: Array,
+      required: true
+    },
+    active: {
+      type: Number
+    },
     bg: {
       type: String,
       default: '#f1f1f1'
     },
     color: {
       type: String,
-      default: '#666'
+      default: '#fff'
     }
   },
   data() {
-    return {}
+    return {
+      activeIndex: 0
+    }
+  },
+  mounted() {
+    if (this.active && this.menus.length >= this.active) {
+      this.activeIndex = this.active
+    }
+  },
+  methods: {
+    callback(item, index) {
+      this.activeIndex = index
+      if (item.cb && typeof item.cb === 'function') {
+        item.cb()
+      }
+    }
   }
 }
 </script>
 <style lang="scss" scoped>
+.tabbar {
   ul {
     display: flex;
-    padding: 0 10px;
     justify-content: space-around;
     list-style: none;
-    border-top: 1px solid #dedede;
     li {
       padding: 10px 0;
       flex-grow: 1;
@@ -56,8 +70,9 @@ export default {
         }
       }
       &.active {
-        color: #38adff;
+        background: #23ade5;
       }
     }
   }
+}
 </style>

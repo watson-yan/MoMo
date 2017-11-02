@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar shadow">
+  <div class="navbar">
     <div onclick="history.back()">
       <i class="iconfont icon-back"></i>
     </div>
@@ -21,7 +21,7 @@
 <style lang="scss" scoped>
 .navbar {
   padding: 0.75rem 1rem;
-  background: #0288d1;
+  background: rgb(147, 157, 174);
   color: #fff;
 }
 </style>

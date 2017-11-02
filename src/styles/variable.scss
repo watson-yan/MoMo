@@ -1,13 +1,16 @@
-/**
-* Color 
-*/
-$primary: #0288d1;
-$success: #4CAF50;
-$info: #c5cb63;
-$warning: #ff943e;
-$danger: #F44336;
+// Color 
+$primary: #23ade5;
+$success: #7dc163;
+$info: #efeccd;
+$warning: #facc7e;
+$danger: #e26e48;
 
-/**
-* Border
-*/
-$border: 1px solid #ccc;
+// Border
+$border: 1px solid #e0e4eb;
+
+@mixin border-bottom() {
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(bottom, #ccc, #ccc 100%);
+}

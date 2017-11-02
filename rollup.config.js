@@ -1,11 +1,11 @@
 import resolve from 'rollup-plugin-node-resolve'
-import babel from 'rollup-plugin-babel'
-import vue from 'rollup-plugin-vue'
-import sass from 'rollup-plugin-sass'
-import uglify from 'rollup-plugin-uglify'
 import replace from 'rollup-plugin-replace'
+import uglify from 'rollup-plugin-uglify'
+import babel from 'rollup-plugin-babel'
 import alias from 'rollup-plugin-alias'
 import autoprefixer from 'autoprefixer'
+import sass from 'rollup-plugin-sass'
+import vue from 'rollup-plugin-vue'
 import postcss from 'postcss'
 
 export default {
@@ -18,8 +18,10 @@ export default {
       'vue': 'vue/dist/vue.esm.js'
     }),
     vue({
-      postcss: [autoprefixer()], // 配置vue文件中的 postcss/autoprefixer
-      css: true
+      css: true,
+      postcss() { // 配置vue文件中的 postcss/autoprefixer
+        return [autoprefixer()]
+      }
     }),
     replace({
       'process.env.NODE_ENV': JSON.stringify('development'),

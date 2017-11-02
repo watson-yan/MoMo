@@ -1,86 +1,74 @@
-/**
-* Color 
-*/
-/**
-* Border
-*/
-/**
-* Color 
-*/
-/**
-* Border
-*/
 .button {
-  padding: .5rem 1.5rem;
+  padding: .75rem 2.25rem;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #e0e4eb;
   border-radius: .2rem;
   font-size: 1rem; }
   .button.primary {
     color: #fff;
-    background: #0288d1;
-    border: 1px solid #0288d1; }
+    background: #23ade5;
+    border: 1px solid #23ade5; }
     .button.primary:active {
-      background: #1298e1; }
+      background: #33bdf5; }
   .button.success {
     color: #fff;
-    background: #4CAF50;
-    border: 1px solid #4CAF50; }
+    background: #7dc163;
+    border: 1px solid #7dc163; }
     .button.success:active {
-      background: #5cbf60; }
+      background: #8dd173; }
   .button.info {
     color: #fff;
-    background: #c5cb63;
-    border: 1px solid #c5cb63; }
+    background: #efeccd;
+    border: 1px solid #efeccd; }
     .button.info:active {
-      background: #d5db73; }
+      background: #fffcdd; }
   .button.warning {
     color: #fff;
-    background: #ff943e;
-    border: 1px solid #ff943e; }
+    background: #facc7e;
+    border: 1px solid #facc7e; }
     .button.warning:active {
-      background: #ffa44e; }
+      background: #ffdc8e; }
   .button.danger {
     color: #fff;
-    background: #F44336;
-    border: 1px solid #F44336; }
+    background: #e26e48;
+    border: 1px solid #e26e48; }
     .button.danger:active {
-      background: #ff5346; }
+      background: #f27e58; }
   .button.primary-o {
-    color: #0288d1;
+    color: #23ade5;
     background: #fff;
-    border: 1px solid #0288d1; }
+    border: 1px solid #23ade5; }
     .button.primary-o:active {
-      color: #1298e1;
-      border-color: #1298e1; }
+      color: #33bdf5;
+      border-color: #33bdf5; }
   .button.success-o {
-    color: #4CAF50;
+    color: #7dc163;
     background: #fff;
-    border: 1px solid #4CAF50; }
+    border: 1px solid #7dc163; }
     .button.success-o:active {
-      color: #5cbf60;
-      border-color: #5cbf60; }
+      color: #8dd173;
+      border-color: #8dd173; }
   .button.info-o {
-    color: #c5cb63;
+    color: #efeccd;
     background: #fff;
-    border: 1px solid #c5cb63; }
+    border: 1px solid #efeccd; }
     .button.info-o:active {
-      color: #d5db73;
-      border-color: #d5db73; }
+      color: #fffcdd;
+      border-color: #fffcdd; }
   .button.warning-o {
-    color: #ff943e;
+    color: #facc7e;
     background: #fff;
-    border: 1px solid #ff943e; }
+    border: 1px solid #facc7e; }
     .button.warning-o:active {
-      color: #ffa44e;
-      border-color: #ffa44e; }
+      color: #ffdc8e;
+      border-color: #ffdc8e; }
   .button.danger-o {
-    color: #F44336;
+    color: #e26e48;
     background: #fff;
-    border: 1px solid #F44336; }
+    border: 1px solid #e26e48; }
     .button.danger-o:active {
-      color: #ff5346;
-      border-color: #ff5346; }
+      color: #f27e58;
+      border-color: #f27e58; }
   .button.block {
     display: block;
     width: 100%; }
@@ -89,6 +77,102 @@
     border: 1px solid transparent; }
   .button:focus {
     outline: none; }
+
+.radiobox, .checkbox {
+  display: inline-block;
+  position: relative; }
+  .radiobox input, .checkbox input {
+    position: absolute;
+    opacity: 0; }
+    .radiobox input:checked + .check span, .checkbox input:checked + .check span {
+      border-color: #23ade5; }
+  .radiobox .check, .checkbox .check {
+    display: inline-block; }
+    .radiobox .check span, .checkbox .check span {
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      border: 1px solid #e0e4eb; }
+      .radiobox .check span:before, .checkbox .check span:before {
+        -webkit-transition: all .3s linear;
+        transition: all .3s linear; }
+  .radiobox span, .checkbox span {
+    vertical-align: middle; }
+
+.radiobox .check span {
+  border-radius: 100%; }
+  .radiobox .check span:before {
+    content: ' ';
+    display: block;
+    margin: .3rem auto;
+    width: .9rem;
+    height: 0.9rem;
+    border-radius: 100%; }
+
+.radiobox input:checked + .check span:before {
+  background: #23ade5; }
+
+.checkbox .check span:before {
+  content: ' ';
+  display: block;
+  margin: 2px auto;
+  width: .5rem;
+  height: 0.85rem;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.checkbox input:checked + .check span {
+  background: #23ade5; }
+
+.switch {
+  display: inline-block;
+  margin: 0;
+  height: 1.7rem; }
+  .switch input {
+    position: absolute;
+    opacity: 0;
+    width: 1rem;
+    height: 1rem; }
+    .switch input:checked ~ .check {
+      background: #23ade5;
+      border-color: #23ade5; }
+      .switch input:checked ~ .check:before {
+        -webkit-transform: translateX(1.5rem);
+                transform: translateX(1.5rem); }
+  .switch .check {
+    display: inline-block;
+    position: relative;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    overflow: visible;
+    border: 1px solid;
+    border-color: #929292;
+    background-color: #929292; }
+    .switch .check:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      z-index: 2;
+      border-radius: 50%;
+      background-color: #fff;
+      -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear; }
+
+.caption-title {
+  margin: 0;
+  padding: .5rem;
+  color: #666;
+  font-weight: 600;
+  background: #ebeaf0; }
 
 .text-ellipsis {
   word-break: break-all;
@@ -131,6 +215,7 @@ html, body {
   margin: 0;
   padding: 0;
   clear: both;
+  color: #767e8f;
   font-size: 14px; }
 
 ul {
@@ -142,8 +227,9 @@ ul {
   display: -ms-flexbox;
   display: flex;
   padding: 0.625rem 0;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #e0e4eb; }
   .item .icon {
+    padding: 0 .5rem;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -155,6 +241,20 @@ ul {
             flex: 1 1 auto;
     -ms-flex-item-align: center;
         align-self: center; }
+
+.list .list-header {
+  padding: 0 0 0 1rem;
+  font-weight: 500;
+  color: #1f1f21;
+  line-height: 2.25rem;
+  background-color: #eee; }
+
+.list .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0 0 0 1rem; }
 
 .shadow {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -171,3 +271,10 @@ ul {
 
 .center {
   text-align: center; }
+
+.border-bottom {
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ccc), to(#ccc));
+  background-image: linear-gradient(bottom, #ccc, #ccc 100%); }

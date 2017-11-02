@@ -10368,7 +10368,7 @@ if (inBrowser$1 && window.Vue) {
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = ".home .list-item[data-v-5a90ec03] { padding: 0.75rem 0 0.75rem 1rem; border-bottom: 1px solid #ccc; } ";style.type = 'text/css';if (style.styleSheet) {
+        css = ".home .list-item[data-v-5a90ec03] { padding: 0.75rem 0 0.75rem 1rem; border-bottom: 1px solid #e0e4eb; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -10377,7 +10377,7 @@ if (inBrowser$1 && window.Vue) {
 })();
 
 var Home = { render: function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "home" }, [_c('router-link', { staticClass: "list-item", attrs: { "to": { path: '/button' }, "tag": "section" } }, [_vm._v("按钮")]), _vm._v(" "), _c('router-link', { staticClass: "list-item", attrs: { "to": { path: '/item' }, "tag": "section" } }, [_vm._v("列表")])], 1);
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "home" }, [_c('p', { staticClass: "caption-title" }, [_vm._v("样式列表")]), _vm._v(" "), _c('router-link', { staticClass: "list-item", attrs: { "to": { path: '/button' }, "tag": "section" } }, [_vm._v("按钮")]), _vm._v(" "), _c('router-link', { staticClass: "list-item", attrs: { "to": { path: '/item' }, "tag": "section" } }, [_vm._v("列表")]), _vm._v(" "), _c('router-link', { staticClass: "list-item", attrs: { "to": { path: '/input' }, "tag": "section" } }, [_vm._v("表单")]), _vm._v(" "), _c('router-link', { staticClass: "list-item", attrs: { "to": { path: '/list' }, "tag": "section" } }, [_vm._v("列表")])], 1);
   }, staticRenderFns: [], _scopeId: 'data-v-5a90ec03',
   data: function data() {
     return {};
@@ -10388,7 +10388,7 @@ var Home = { render: function render() {
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = ".page-button .demo-item[data-v-5a90ec03][data-v-aa1ed058] { padding: .625rem 1rem; } ";style.type = 'text/css';if (style.styleSheet) {
+        css = ".page-button .demo-item[data-v-aa1ed058] { padding: .625rem 1rem; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -10397,23 +10397,9 @@ var Home = { render: function render() {
 })();
 
 var Button = { render: function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "page-button" }, [_c('nav-bar'), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)], 1);
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
   }, staticRenderFns: [function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Default")])]);
-  }, function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button primary" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Primary")])]);
-  }, function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button success" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Success")])]);
-  }, function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button warning" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Warning")])]);
-  }, function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button info" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Info")])]);
-  }, function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button danger" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Danger")])]);
-  }, function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticStyle: { "padding": "10px" } }, [_c('button', { staticClass: "button primary block" }, [_vm._v("提交")])]);
-  }, function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticStyle: { "padding": "0px 10px" } }, [_c('button', { staticClass: "button primary-o block" }, [_vm._v("提交")])]);
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "page-button" }, [_c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Default")])]), _vm._v(" "), _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button primary" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Primary")])]), _vm._v(" "), _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button success" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Success")])]), _vm._v(" "), _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button warning" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Warning")])]), _vm._v(" "), _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button info" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Info")])]), _vm._v(" "), _c('section', { staticClass: "demo-item" }, [_c('button', { staticClass: "button danger" }, [_vm._v("Button")]), _vm._v(" "), _c('span', [_vm._v("Danger")])]), _vm._v(" "), _c('div', { staticStyle: { "padding": "10px" } }, [_c('button', { staticClass: "button primary block" }, [_vm._v("Submit")])]), _vm._v(" "), _c('div', { staticStyle: { "padding": "0px 10px" } }, [_c('button', { staticClass: "button primary-o block" }, [_vm._v("Submit")])])]);
   }], _scopeId: 'data-v-aa1ed058',
   data: function data() {
     return {};
@@ -10424,7 +10410,7 @@ var Button = { render: function render() {
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = " /*# sourceMappingURL=item.vue.map */";style.type = 'text/css';if (style.styleSheet) {
+        css = ".page-item .circle[data-v-5d734db5] { border-radius: 100%; } .page-item .content p[data-v-5d734db5] { margin: 3px 0; font-size: 12px; color: #999; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -10433,16 +10419,62 @@ var Button = { render: function render() {
 })();
 
 var Item = { render: function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "page-item" }, [_c('nav-bar'), _vm._v(" "), _vm._m(0)], 1);
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "page-item" }, _vm._l(_vm.list, function (item, index) {
+      return _c('div', { key: index, staticClass: "item" }, [_c('div', { staticClass: "icon" }, [_c('img', { staticClass: "circle", attrs: { "src": item.img, "width": "40", "height": "40" } })]), _vm._v(" "), _c('div', { staticClass: "content" }, [_vm._v(" " + _vm._s(item.title) + " "), _c('p', [_vm._v("view: 423　　update: 2017-11-01 12:04")])])]);
+    }));
+  }, staticRenderFns: [], _scopeId: 'data-v-5d734db5',
+  data: function data() {
+    return {
+      list: [{ img: './imgs/avatar/avatar1.jpg', title: 'If you can do what you do best and be happy, you are further along in life than most people. ' }, { img: './imgs/avatar/avatar2.jpg', title: 'Never put off what you can do today until tomorrow.' }, { img: './imgs/avatar/avatar3.jpg', title: 'The best preparation for tomorrow is doing your best today. ' }, { img: './imgs/avatar/avatar4.jpg', title: 'Failure is the mother of success. - Thomas Paine' }, { img: './imgs/avatar/avatar5.jpg', title: 'The reason why a great man is great is that he resolves to be a great man. ' }, { img: './imgs/avatar/avatar6.jpg', title: 'If you can do what you do best and be happy, you are further along in life than most people. ' }, { img: './imgs/avatar/avatar4.jpg', title: 'Failure is the mother of success. - Thomas Paine' }, { img: './imgs/avatar/avatar2.jpg', title: 'Never put off what you can do today until tomorrow.' }, { img: './imgs/avatar/avatar6.jpg', title: 'If you can do what you do best and be happy, you are further along in life than most people. ' }, { img: './imgs/avatar/avatar3.jpg', title: 'The best preparation for tomorrow is doing your best today. ' }, { img: './imgs/avatar/avatar1.jpg', title: 'If you can do what you do best and be happy, you are further along in life than most people. ' }, { img: './imgs/avatar/avatar4.jpg', title: 'Failure is the mother of success. - Thomas Paine' }, { img: './imgs/avatar/avatar5.jpg', title: 'The reason why a great man is great is that he resolves to be a great man. ' }, { img: './imgs/avatar/avatar6.jpg', title: 'If you can do what you do best and be happy, you are further along in life than most people. ' }, { img: './imgs/avatar/avatar2.jpg', title: 'Never put off what you can do today until tomorrow.' }, { img: './imgs/avatar/avatar4.jpg', title: 'Failure is the mother of success. - Thomas Paine' }, { img: './imgs/avatar/avatar5.jpg', title: 'The reason why a great man is great is that he resolves to be a great man. ' }, { img: './imgs/avatar/avatar1.jpg', title: 'If you can do what you do best and be happy, you are further along in life than most people. ' }, { img: './imgs/avatar/avatar2.jpg', title: 'Never put off what you can do today until tomorrow.' }, { img: './imgs/avatar/avatar4.jpg', title: 'Failure is the mother of success. - Thomas Paine' }]
+    };
+  }
+};
+
+(function () {
+  if (typeof document !== 'undefined') {
+    var head = document.head || document.getElementsByTagName('head')[0],
+        style = document.createElement('style'),
+        css = ".page-input[data-v-38f46518] { padding: 10px; } ";style.type = 'text/css';if (style.styleSheet) {
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }head.appendChild(style);
+  }
+})();
+
+var Input = { render: function render() {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
   }, staticRenderFns: [function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "item" }, [_c('div', { staticClass: "icon" }, [_c('i', { staticClass: "iconfont icon-star-o" })]), _vm._v(" "), _c('div', { staticClass: "content" }, [_vm._v("按时打算打算的")])]);
-  }], _scopeId: 'data-v-5d734db5',
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "page-input" }, [_c('p', { staticClass: "caption-title" }, [_vm._v("Radio")]), _vm._v(" "), _c('label', { staticClass: "radiobox" }, [_c('input', { attrs: { "name": "radio1", "type": "radio" } }), _vm._v(" "), _c('div', { staticClass: "check" }, [_c('span')]), _vm._v(" "), _c('span', { staticClass: "caption" }, [_vm._v("Apple")])]), _vm._v(" "), _c('label', { staticClass: "radiobox" }, [_c('input', { attrs: { "name": "radio1", "type": "radio" } }), _vm._v(" "), _c('div', { staticClass: "check" }, [_c('span')]), _vm._v(" "), _c('span', { staticClass: "caption" }, [_vm._v("Orange")])]), _vm._v(" "), _c('p', { staticClass: "caption-title" }, [_vm._v("Checkbox")]), _vm._v(" "), _c('div', { staticStyle: { "padding": "10px 0" } }, [_c('label', { staticClass: "checkbox" }, [_c('input', { attrs: { "name": "checkbox1", "type": "checkbox" } }), _vm._v(" "), _c('div', { staticClass: "check" }, [_c('span')]), _vm._v(" "), _c('span', { staticClass: "caption" }, [_vm._v("Apple")])]), _vm._v(" "), _c('label', { staticClass: "checkbox" }, [_c('input', { attrs: { "name": "checkbox1", "type": "checkbox" } }), _vm._v(" "), _c('div', { staticClass: "check" }, [_c('span')]), _vm._v(" "), _c('span', { staticClass: "caption" }, [_vm._v("Orange")])])]), _vm._v(" "), _c('div', [_c('label', { staticClass: "switch" }, [_c('input', { attrs: { "type": "checkbox", "checked": "checked" } }), _vm._v(" "), _c('span', { staticClass: "check" })])])]);
+  }], _scopeId: 'data-v-38f46518',
   data: function data() {
     return {};
   }
 };
 
-var routes = [{ path: '/', component: Home }, { path: '/button', component: Button }, { path: '/item', component: Item }];
+(function () {
+  if (typeof document !== 'undefined') {
+    var head = document.head || document.getElementsByTagName('head')[0],
+        style = document.createElement('style'),
+        css = ".list-item .demo[data-v-6778c5c0] { padding: 1rem; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; } ";style.type = 'text/css';if (style.styleSheet) {
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }head.appendChild(style);
+  }
+})();
+
+var List = { render: function render() {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _vm._m(0);
+  }, staticRenderFns: [function () {
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "page-list" }, [_c('div', { staticClass: "list" }, [_c('div', { staticClass: "list-header" }, [_vm._v("DEFAULT")]), _vm._v(" "), _c('div', { staticClass: "list-item" }, [_c('div', { staticClass: "demo border-bottom" }, [_vm._v(" Item A ")])]), _vm._v(" "), _c('div', { staticClass: "list-item" }, [_c('div', { staticClass: "demo border-bottom" }, [_vm._v(" Item B "), _c('label', { staticClass: "radiobox", staticStyle: { "float": "right" } }, [_c('input', { attrs: { "name": "radio1", "type": "radio" } }), _vm._v(" "), _c('div', { staticClass: "check" }, [_c('span')])])])]), _vm._v(" "), _c('div', { staticClass: "list-item" }, [_c('div', { staticClass: "demo" }, [_vm._v(" Item C "), _c('label', { staticClass: "switch", staticStyle: { "float": "right" } }, [_c('input', { attrs: { "type": "checkbox", "checked": "checked" } }), _vm._v(" "), _c('span', { staticClass: "check" })])])]), _vm._v(" "), _c('div', { staticClass: "list-header" }, [_vm._v("SETTING")]), _vm._v(" "), _c('div', { staticClass: "list-item" }, [_c('div', { staticClass: "demo border-bottom" }, [_vm._v(" Item A ")])]), _vm._v(" "), _c('div', { staticClass: "list-item" }, [_c('div', { staticClass: "demo border-bottom" }, [_vm._v(" Item B ")])]), _vm._v(" "), _c('div', { staticClass: "list-item" }, [_c('div', { staticClass: "demo border-bottom" }, [_vm._v(" Item C ")])])])]);
+  }], _scopeId: 'data-v-6778c5c0',
+  data: function data() {
+    return {};
+  }
+};
+
+var routes = [{ path: '/', component: Home }, { path: '/button', component: Button }, { path: '/item', component: Item }, { path: '/input', component: Input }, { path: '/list', component: List }];
 
 var router = new VueRouter({
   mode: 'history',
@@ -10453,7 +10485,7 @@ var router = new VueRouter({
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = ".app[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6] { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } .app > header[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6], .app > footer[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6] { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; -ms-flex-negative: 1; flex-shrink: 1; } .app > article[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6] { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-negative: 0; flex-shrink: 0; } .component-fade-enter-active[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6], .component-fade-leave-active[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6] { -webkit-transition: opacity .3s ease; transition: opacity .3s ease; } /* .component-fade-leave-active for below version 2.1.8 */ .component-fade-enter[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6], .component-fade-leave-to[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6] { opacity: 0; } ";style.type = 'text/css';if (style.styleSheet) {
+        css = ".app[data-v-992092a6] { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } .app > header[data-v-992092a6], .app > footer[data-v-992092a6] { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; -ms-flex-negative: 1; flex-shrink: 1; } .app > article[data-v-992092a6] { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-negative: 1; flex-shrink: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; } .component-fade-enter-active[data-v-992092a6], .component-fade-leave-active[data-v-992092a6] { -webkit-transition: opacity .3s ease; transition: opacity .3s ease; } /* .component-fade-leave-active for below version 2.1.8 */ .component-fade-enter[data-v-992092a6], .component-fade-leave-to[data-v-992092a6] { opacity: 0; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -10462,11 +10494,32 @@ var router = new VueRouter({
 })();
 
 var App = { render: function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "app" }, [_c('article', [_c('transition', { attrs: { "name": "component-fade", "mode": "out-in" } }, [_c('router-view')], 1)], 1), _vm._v(" "), _c('footer', [_c('tab-bar')], 1)]);
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "app" }, [_c('article', [_c('transition', { attrs: { "name": "component-fade", "mode": "out-in" } }, [_c('router-view')], 1)], 1), _vm._v(" "), _c('footer', [_c('tab-bar', { attrs: { "bg": '#939dae', "menus": _vm.menus } })], 1)]);
   }, staticRenderFns: [], _scopeId: 'data-v-992092a6',
   data: function data() {
+    var _this = this;
+
     return {
-      active: 'ITEM1'
+      active: 'ITEM1',
+      menus: [{
+        title: '样式',
+        icon: 'iconfont icon-listview',
+        cb: function cb() {
+          _this.$router.push({ path: '/' });
+        }
+      }, {
+        title: '组件',
+        icon: 'iconfont icon-star-o',
+        cb: function cb() {
+          _this.$router.push({ path: '/components' });
+        }
+      }, {
+        title: '关于',
+        icon: 'iconfont icon-personal',
+        cb: function cb() {
+          _this.$router.push({ path: '/about' });
+        }
+      }]
     };
   }
 };
@@ -10475,7 +10528,7 @@ var App = { render: function render() {
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = ".mm-tabs ul[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4] { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding-left: 0; list-style: none; border-bottom: 1px solid #dedede; } .mm-tabs ul li[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4] { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-negative: 0; flex-shrink: 0; text-align: center; height: 2.625rem; line-height: 2.5rem; } .mm-tabs ul li.active[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4] { color: #38adff; border-bottom: 2px solid #38adff; } ";style.type = 'text/css';if (style.styleSheet) {
+        css = ".mm-tabs ul[data-v-c58ee6e4] { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding-left: 0; list-style: none; border-bottom: 1px solid #dedede; } .mm-tabs ul li[data-v-c58ee6e4] { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-negative: 0; flex-shrink: 0; text-align: center; height: 2.625rem; line-height: 2.5rem; } .mm-tabs ul li.active[data-v-c58ee6e4] { color: #38adff; border-bottom: 2px solid #38adff; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -10495,7 +10548,7 @@ var tabs = { render: function render() {
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = "ul[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4][data-v-04ac836e] { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 10px; -ms-flex-pack: distribute; justify-content: space-around; list-style: none; border-top: 1px solid #dedede; } ul li[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4][data-v-04ac836e] { padding: 10px 0; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-negative: 0; flex-shrink: 0; text-align: center; } ul li p[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4][data-v-04ac836e] { margin: 0; } ul li p i[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4][data-v-04ac836e] { font-size: 24px; vertical-align: sub; } ul li.active[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4][data-v-04ac836e] { color: #38adff; } ";style.type = 'text/css';if (style.styleSheet) {
+        css = ".tabbar ul[data-v-04ac836e] { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; list-style: none; } .tabbar ul li[data-v-04ac836e] { padding: 10px 0; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-negative: 0; flex-shrink: 0; text-align: center; } .tabbar ul li p[data-v-04ac836e] { margin: 0; } .tabbar ul li p i[data-v-04ac836e] { font-size: 24px; vertical-align: sub; } .tabbar ul li.active[data-v-04ac836e] { background: #23ade5; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -10504,22 +10557,47 @@ var tabs = { render: function render() {
 })();
 
 var tabbar = { render: function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "tabbar", style: { background: _vm.bg, color: _vm.color } }, [_vm._m(0)]);
-  }, staticRenderFns: [function () {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('ul', [_c('li', { staticClass: "active" }, [_c('p', [_c('i', { staticClass: "iconfont icon-listview" }), _vm._v(" 样式 ")])]), _vm._v(" "), _c('li', [_c('p', [_c('i', { staticClass: "iconfont icon-star-o" }), _vm._v(" 组件 ")])]), _vm._v(" "), _c('li', [_c('p', [_c('i', { staticClass: "iconfont icon-personal" }), _vm._v(" 关于 ")])])]);
-  }], _scopeId: 'data-v-04ac836e',
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "tabbar", style: { background: _vm.bg, color: _vm.color } }, [_c('ul', _vm._l(_vm.menus, function (item, index) {
+      return _c('li', { key: index, class: { active: _vm.activeIndex === index }, on: { "click": function click($event) {
+            _vm.callback(item, index);
+          } } }, [_c('p', [_c('i', { class: item.icon }), _vm._v(" " + _vm._s(item.title) + " ")])]);
+    }))]);
+  }, staticRenderFns: [], _scopeId: 'data-v-04ac836e',
   props: {
+    menus: {
+      type: Array,
+      required: true
+    },
+    active: {
+      type: Number
+    },
     bg: {
       type: String,
       default: '#f1f1f1'
     },
     color: {
       type: String,
-      default: '#666'
+      default: '#fff'
     }
   },
   data: function data() {
-    return {};
+    return {
+      activeIndex: 0
+    };
+  },
+  mounted: function mounted() {
+    if (this.active && this.menus.length >= this.active) {
+      this.activeIndex = this.active;
+    }
+  },
+
+  methods: {
+    callback: function callback(item, index) {
+      this.activeIndex = index;
+      if (item.cb && typeof item.cb === 'function') {
+        item.cb();
+      }
+    }
   }
 };
 
@@ -10527,7 +10605,7 @@ var tabbar = { render: function render() {
   if (typeof document !== 'undefined') {
     var head = document.head || document.getElementsByTagName('head')[0],
         style = document.createElement('style'),
-        css = ".navbar[data-v-5a90ec03][data-v-aa1ed058][data-v-5d734db5][data-v-992092a6][data-v-c58ee6e4][data-v-04ac836e][data-v-688b5e20] { padding: 0.75rem 1rem; background: #0288d1; color: #fff; } ";style.type = 'text/css';if (style.styleSheet) {
+        css = ".navbar[data-v-688b5e20] { padding: 0.75rem 1rem; background: #939dae; color: #fff; } ";style.type = 'text/css';if (style.styleSheet) {
       style.styleSheet.cssText = css;
     } else {
       style.appendChild(document.createTextNode(css));
@@ -10536,7 +10614,7 @@ var tabbar = { render: function render() {
 })();
 
 var navbar = { render: function render() {
-    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "navbar shadow" }, [_vm._m(0), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.title))])]);
+    var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { staticClass: "navbar" }, [_vm._m(0), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.title))])]);
   }, staticRenderFns: [function () {
     var _vm = this;var _h = _vm.$createElement;var _c = _vm._self._c || _h;return _c('div', { attrs: { "onclick": "history.back()" } }, [_c('i', { staticClass: "iconfont icon-back" })]);
   }], _scopeId: 'data-v-688b5e20',

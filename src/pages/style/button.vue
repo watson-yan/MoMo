@@ -1,6 +1,5 @@
 <template>
   <div class="page-button">
-    <nav-bar></nav-bar>
     <section class="demo-item">
       <button class="button">Button</button>
       <span>Default</span>
@@ -27,10 +26,10 @@
     </section>
 
     <div style="padding: 10px;">
-      <button class="button primary block">提交</button>
+      <button class="button primary block">Submit</button>
     </div>
     <div style="padding: 0px 10px;">
-      <button class="button primary-o block">提交</button>
+      <button class="button primary-o block">Submit</button>
     </div>
   </div>
 </template>

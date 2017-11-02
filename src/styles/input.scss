@@ -1,0 +1,122 @@
+@import './variable.scss';
+
+.radiobox, .checkbox{
+  display: inline-block;
+  position: relative;
+  input {
+    position: absolute;
+    opacity: 0;
+    &:checked{
+      & + .check span {
+        border-color: $primary;
+      }
+    }
+  }
+  .check {  
+    display: inline-block;
+    span {
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      border: $border;
+      &:before {
+        transition: all .3s linear;
+      }
+    }
+  }
+  span {
+    vertical-align: middle;
+  }
+}
+
+// 单选框
+.radiobox {
+  .check {
+    span {
+      border-radius: 100%;
+      &:before {
+        content: ' ';
+        display: block;
+        margin: .3rem auto;
+        width: .9rem;
+        height: 0.9rem;
+        border-radius: 100%;
+      }
+    }
+  }
+  input:checked {
+    & + .check span {
+      &:before {
+        background: $primary;
+      }
+    }
+  }
+}
+
+// 复选框
+.checkbox {
+  .check {
+    span {
+      &:before {
+        content: ' ';
+        display: block;
+        margin: 2px auto;
+        width: .5rem;
+        height: 0.85rem;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  input:checked {
+    & + .check span {
+      background: $primary;
+    }
+  }
+}
+
+// 滑块
+.switch {
+  display: inline-block;
+  margin: 0;
+  height: 1.7rem;
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 1rem;
+    height: 1rem;
+    &:checked ~ .check {
+      background: $primary;
+      border-color: $primary;
+      &:before {
+        transform: translateX(1.5rem);
+      }
+    }
+  }
+
+  .check {
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    overflow: visible;
+    border: 1px solid;
+    border-color: #929292;
+    background-color: #929292;
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      z-index: 2;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+      transition: all .2s linear;
+    }
+  }
+}

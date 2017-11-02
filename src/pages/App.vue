@@ -6,7 +6,10 @@
       </transition>
     </article>
     <footer>
-      <tab-bar></tab-bar>
+      <tab-bar 
+        :bg="'#939dae'"
+        :menus="menus">
+      </tab-bar>
     </footer>
   </div>
 </template>
@@ -14,7 +17,24 @@
   export default {
     data() {
       return {
-        active: 'ITEM1'
+        active: 'ITEM1',
+        menus: [
+          {
+            title: '样式',
+            icon: 'iconfont icon-listview',
+            cb: () => { this.$router.push({path: '/'})}
+          },
+          {
+            title: '组件', 
+            icon: 'iconfont icon-star-o',
+            cb: () => {this.$router.push({path: '/components'})}
+          },
+          {
+            title: '关于', 
+            icon: 'iconfont icon-personal',
+            cb: () => {this.$router.push({path: '/about'})}
+          },
+        ]
       }
     }
   }
@@ -30,7 +50,9 @@
   }
   &>article {
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

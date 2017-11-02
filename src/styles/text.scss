@@ -1,7 +1,13 @@
 .text {
   
 }
-
+.caption-title {
+  margin: 0;
+  padding: .5rem;
+  color: #666;
+  font-weight: 600;
+  background: #ebeaf0;
+}
 // 过长显示省略号
 .text-ellipsis {
   word-break: break-all;

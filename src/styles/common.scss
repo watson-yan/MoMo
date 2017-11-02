@@ -1,6 +1,7 @@
 // 导入变量
 @import './variable.scss';
 @import './button.scss';
+@import './input.scss';
 @import './text.scss';
 @import './grid.scss';
 @import './span.scss';
@@ -11,6 +12,7 @@ html, body {
   margin: 0;
   padding: 0;
   clear: both;
+  color: #767e8f;
   font-size: 14px;
 }
 ul {
@@ -18,17 +20,35 @@ ul {
   padding-left: 0;
 }
 
+// 栏目
 .item {
   display: flex;
   padding: 0.625rem 0;
   border-bottom: $border;
   .icon {
+    padding: 0 .5rem;
     flex: 0 0 auto;
     align-self: center;
   }
   .content {
     flex: 1 1 auto;
     align-self: center;
+  }
+}
+
+// 列表
+.list {
+  .list-header {
+    padding: 0 0 0 1rem;
+    font-weight: 500;
+    color: #1f1f21;
+    line-height: 2.25rem;
+    background-color: #eee;
+  }
+  .list-item {
+    display: flex;
+    position: relative;
+    padding: 0 0 0 1rem;
   }
 }
 
@@ -51,4 +71,12 @@ ul {
 // 居中
 .center {
   text-align: center;
+}
+// 1像素底
+
+.border-bottom {
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: linear-gradient(bottom, #ccc, #ccc 100%);
 }
