@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <p class="caption-title">样式列表</p>
-    <router-link :to="{path: '/button'}" class="list-item" tag="section">按钮</router-link>
-    <router-link :to="{path: '/item'}" class="list-item" tag="section">列表</router-link>
-    <router-link :to="{path: '/input'}" class="list-item" tag="section">表单</router-link>
-    <router-link :to="{path: '/list'}" class="list-item" tag="section">列表</router-link>
+    <router-link :to="{path: '/button'}" class="list-item" tag="section">Button 按钮</router-link>
+    <router-link :to="{path: '/item'}" class="list-item" tag="section">Item 栏目</router-link>
+    <router-link :to="{path: '/input'}" class="list-item" tag="section">Form 表单</router-link>
+    <router-link :to="{path: '/list'}" class="list-item" tag="section">List 列表</router-link>
   </div>
 </template>
 <script>

@@ -8,9 +8,9 @@ $danger: #e26e48;
 // Border
 $border: 1px solid #e0e4eb;
 
-@mixin border-bottom() {
-  background-size: 100% 1px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: linear-gradient(bottom, #ccc, #ccc 100%);
-}
+// @mixin border-bottom($color: #ccc) {
+//   background-size: 100% 1px;
+//   background-repeat: no-repeat;
+//   background-position: bottom;
+//   background-image: linear-gradient(bottom, $color, $color 100%);
+// }

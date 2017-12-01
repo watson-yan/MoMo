@@ -83,9 +83,9 @@
   height: 1.7rem;
   input {
     position: absolute;
-    opacity: 0;
     width: 1rem;
     height: 1rem;
+    opacity: 0;
     &:checked ~ .check {
       background: $primary;
       border-color: $primary;
